@@ -1,0 +1,255 @@
+<html>
+<head>
+	<title>
+		Woof
+	</title>
+	<script>
+		$("#foo2").carouFredSel({
+		    circular: false,
+		    infinite: false,
+		    auto    : false,
+		    prev    : {
+		        button  : "#foo2_prev",
+		        key     : "left"
+		    },
+		    next    : {
+		        button  : "#foo2_next",
+		        key     : "right"
+		    },
+		    pagination  : "#foo2_pag"
+		});
+	</script>
+	<script type="text/javascript" src="helper-plugins/jquery.carouFredSel.js"></script>
+	
+	<link href='http://fonts.googleapis.com/css?family=Lobster|Merriweather:400,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css" type="text/css"></link>
+	<link href='http://fonts.googleapis.com/css?family=Diplomata+SC' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Crete+Round|Courgette' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,700,600' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Seaweed+Script|Leckerli+One' rel='stylesheet' type='text/css'>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+	<header id="site_header">
+		<nav id="site_navigation">
+			<p class="name-logo" >alex mendelsohn
+			</p>
+			</a>
+	<!--		<ul>
+			<li>
+				<a href="/sign_in">GoodRx</a>
+			</li>
+			<li>
+				<a href="/register">Sign Up</a>
+			</li>
+			</ul>-->
+		</nav>
+	</header>		
+	<div id="main">
+	
+	<!-- Start Experience Section -->
+	
+	<div id="hats">
+		<div class="section-wrapper" style="border-bottom:none;">
+			<h1>About</h1>
+			<div class="about-pg">
+				<p style="text-align: left;">
+				The beauty of being a product manager at a small startup is the exposure one has to various key roles in the company. Much of the time, the ability of a product manager to wear multiple hats can be vital to a companies operations. I enjoy operating in this space because of the impact and responsibility.
+				</p>
+			</div>
+			<div class="about-sections">
+				<div class="about-list">
+					<p><strong>General experience</strong></p>
+					<ol>
+						<li>Design</li>
+						<li>Business Development</li>
+						<li>Marketing</li>
+						<li>Copy Writing</li>
+					</ol>
+				</div>
+				<div class="about-body">
+					<p><strong>Domain Expertise</strong></p>
+					<ol>
+						<li>Agile Development</li>
+						<li>Design & Development Scheduling</li>
+						<li>Specification writing</li>
+						<li>Fast wireframing using Balsamiq</li>
+						<li>Metrics tracking</li>
+						<li>A/B Testing using Google Analytics</li>
+						<li>Physician Interaction</li>
+						<li>Network Building</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section-border">
+		<hr>
+	</div>
+
+<!-- Start User Experience / Design -->
+		
+	<div id="UX">
+	<!-- Right menu -->
+		<div id="foo2">
+	
+	<!--
+			<div class="section-wrapper">
+				<h1>User Experience & Design</h1>
+					<p>The best products are usually the best looking ones. <br>The better the experience the user has, the time spent on site will be augmented.
+					</p>
+				<h2>Thoughts and musings on UX of GoodRx</h2>
+				<div class="right-menu">
+				<div class="right-menu-copy">
+					<div class="circle">
+						<img src="images/right-menu-circle.png" />
+					</div>
+					<p style="text-align:left;"> 
+						<strong style="font-size:24px;text-align:left">Consistency</strong><br>
+						The menu should open on the same side as the menu button&#8212the right.
+						</p>
+					<p style="margin-top:25px;text-align: left;">
+						<strong style="font-size: 24px">Simplicity</strong><br>
+						Only the most vital actions need to live on the landing page. Pages such as "Use Web Version" and "Privacy Policy" should live solely under this menu and not on the home screen.</p>
+				</div>
+				</div>
+				-->
+			
+	
+		
+		<!--Top Bar Browse -->
+		
+				<div class="section-wrapper" style="margin-top:50px">
+					<div class="topbar-nav-copy">
+						<div class="topbar-nav-circle">
+							<img src="images/goodrx-topbar-browse-circle.png" />
+						</div>
+						<p style="text-align:left;"> 
+							<strong style="font-size:24px;text-align:left">Breadcrumbs</strong><br>
+							Use the native iOS back button to indicate the previous page. If you adopt this paradigm, then the menu would only be accessible from the homepage or from a bezel swipe right, and would be consistent user experience users are accustomed to.
+							</p>
+						<!--<p style="margin-top:25px;text-align: left;">
+							<strong style="font-size: 24px">Simplicity</strong><br>
+							Only the most vital actions need to live on the landing page. Pages such as "Use Web Version" and "Privacy Policy" should live solely under this menu and not on the home screen.</p>-->
+					</div>
+					<div class="top-bar-nav">
+						<img src="images/goodrx-topbar.png" />
+					</div>
+				</div>
+				
+				<!--Top Bar Search -->
+				    <div class="clearfix"></div>
+				    <a class="prev" id="foo2_prev" href="#"><span>prev</span></a>
+				    <a class="next" id="foo2_next" href="#"><span>next</span></a>
+				    <div class="pagination" id="foo2_pag"></div>
+				
+				<div class="section-wrapper" style="margin-top: 50px; border-bottom: none;">
+					<div class="topbar-search">
+					<div class="topbar-search-copy">
+						<div class="circle">
+							<img src="images/goodrx-topbar-search-circle.png" />
+						</div>
+						<p style="text-align:left;"> 
+							<strong style="font-size:24px;text-align:left">Accessibility</strong><br>
+							One of the more common use cases seems like it would be users searching for a specific drug they have in mind. By adding a search button to the top bar, you would provide users with easier, faster access to a better experience. 
+							</p>
+						<!--<p style="margin-top:25px;text-align: left;">
+							<strong style="font-size: 24px">Simplicity</strong><br>
+							Only the most vital actions need to live on the landing page. Pages such as "Use Web Version" and "Privacy Policy" should live solely under this menu and not on the home screen.</p>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="section-border">
+		<hr>
+	</div>
+	
+	<!-- Start Business Development & APIs -->
+	
+	<div id="api">
+		<div class="section-wrapper">
+			<h1>
+				GoodRx API
+			</h1>
+			<div class="api-copy">
+				<p>Develop a GoodRx API for use by insurance providers and healthcare organizations electronic medical records.</p>
+				<div class="api-copy-left">
+					<h2><strong>Insurance</strong></h2>
+					<ol>
+						<li>Incentivize policy holders to purchase the least expensive medication</li>
+						<li>Provide insurance companies insight into the impact the location prescriptions are purchased.</li>
+				</div>
+				<div class="api-copy-right">
+					<h2><strong>Electronic Medical Records</strong></h2>
+					<ol>
+						<li>Integrate with EMR's to help patients and doctors find the cheapest drugs available and contribute to a streamlined health experience as adoption of EMRs grow.</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Start Insurance Platform -->
+	
+	<div id="insurance">
+		<div class="section-wrapper">
+			<h1>InsuranceRx</h1>
+			<p>One of the biggest decisions people will need to make when Obamacare takes effect is what insurance plan to use. People will need to educate themselves on their different options, which can be bewildering to some and complicated to many. Since the mission of GoodRx is to help individuals find affordable health care, it seems appropriate the GoodRx platform could extend to assisting these individuals in finding the right insurance plan that works for them.</p>
+			
+			<div class="insurance-types">
+				<p class="insurance-types" style="font-size: 72px;">&iquestPPO vs. HMO?
+				</p>
+			</div>
+			
+		</div>
+	</div>
+	
+	<!-- Start A/B Testing Project -->
+	
+	<div id="ab-test">
+		<div class="section-wrapper">
+			<div class="ab-test">
+				<h1>A/B Tests</h1>
+				<p>Use Google event trackers to measure success of new features in functionality.</p><br>
+				<p>Trigger | Action | Platform</p>
+			</div>
+		</div>
+	</div>
+		
+		
+	<!--	<div class="main-strategy">
+			<h1 style="font-family: 'Diplomata SC';">Thought Process</h1>
+				<p>Identify the target audience</p>
+				<img src="images/down_arrow.png" height="60" width="40" />
+				<p>Imagine the best possible use case</p>
+				<img src="images/down_arrow.png" height="60" width="40" />
+				<p>Locate & fix any gaps in the product</p>
+				<img src="images/down_arrow.png" height="60" width="40" />
+				<p>Promote</p>
+		</div>
+		<div class="main-seo">
+			<h1 style="font-family: 'Diplomata SC'">Disease Profiles</h1>
+			<h2>Objective</h2>
+				<p>- Develop disease profiles to organize questions and help SEO -</p>
+			<h2>Hypothesis</h2>
+				<p>- Greater sorting and categorizing of questions will convert users seeking more specific information -</p>
+				<h2>Expected Results</h2> 
+				<p>- Increased conversions to HealthTap website -</p>
+				
+			
+		</div>		
+		<div class="main-contact">
+		<h2>Bigger Picture</h2>
+		<p>In order to drive metrics to the greatest degree and achieve a global impact, HealthTap must be a service the enduser <em>needs</em> to use; it should be the user's only mobile solution for personalized healthcare. HealthTap has already begun establishing itself as a place for storing health records, building a comprehensive library of documents for patients and doctors to use for better care. By continuing to build on this aspect of the company, HealthTap will be the best, most convenient place for users to access and share their records. 		
+		</p>
+		
+		<p>
+		It will be a fun and arduous task helping HealthTap attain its potential, and I would love to be a part of the experience!</p>
+				<h2>Like what you see? Call me!</h2>
+		<h2 style="font-size:32px">203.980.0257</h2> -->
+	</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+<head>
+	<script>
+		$(document).ready(function() {
+			$("#foo").carouFredSel({
+				items	: {
+					width	: 140,
+					height	: 140
+				}
+			});
+		});
+	</script>
+	<script>
+		$("#foo2").carouFredSel({
+		circular: false,
+		infinite: true,
+		auto 	: false,
+		prev	: {	
+			button	: "#foo2_prev",
+			key		: "left"
+		},
+		next	: { 
+			button	: "#foo2_next",
+			key		: "right"
+		},
+		pagination	: "#foo2_pag"
+		});
+	</script>
+	<script type="text/javascript" src="helper-plugins/jquery.carouFredSel.js"></script>
+	<link rel="stylesheet" href="slider_style.css" type="text/css"></link>
+</head>
+<body>
+<div class="image_carousel">
+	<div id="foo2">
+		<img src="/examples/images/small/basketball.jpg" alt="basketball" width="140" height="140" />
+		<img src="/examples/images/small/beachtree.jpg" alt="beachtree" width="140" height="140" />
+		<img src="/examples/images/small/cupcackes.jpg" alt="cupcackes" width="140" height="140" />
+		<img src="/examples/images/small/hangmat.jpg" alt="hangmat" width="140" height="140" />
+		<img src="/examples/images/small/new_york.jpg" alt="new york" width="140" height="140" />
+		<img src="/examples/images/small/laundry.jpg" alt="laundry" width="140" height="140" />
+		<img src="/examples/images/small/mom_son.jpg" alt="mom son" width="140" height="140" />
+		<img src="/examples/images/small/picknick.jpg" alt="picknick" width="140" height="140" />
+		<img src="/examples/images/small/shoes.jpg" alt="shoes" width="140" height="140" />
+		<img src="/examples/images/small/paris.jpg" alt="paris" width="140" height="140" />
+		<img src="/examples/images/small/sunbading.jpg" alt="sunbading" width="140" height="140" />
+		<img src="/examples/images/small/yellow_couple.jpg" alt="yellow couple" width="140" height="140" />
+	</div>
+	<div class="clearfix"></div>
+	<a class="prev" id="foo2_prev" href="#"><span>prev</span></a>
+	<a class="next" id="foo2_next" href="#"><span>next</span></a>
+	<div class="pagination" id="foo2_pag"></div>
+</div>
+</body>
+</html>
